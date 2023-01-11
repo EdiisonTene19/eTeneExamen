@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eTeneExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="RESUMEN" FontSize="20" HorizontalTextAlignment="Center"/>
+            <Label x:Name="lblUsuario" HorizontalTextAlignment="Center" FontSize="16"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>
+
+                <Label Text="El nombre es : " Grid.Row="0" Grid.Column="0"/>
+                <Label x:Name="lblNombre" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Total A Pago es: " Grid.Row="2" Grid.Column="0"/>
+                <Label x:Name="lblTotal" Grid.Row="2" Grid.Column="1"/>
+
+            </Grid>
+            <Button x:Name="btnGuardar" Text="Acerca de" Clicked="btnGuardar_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
